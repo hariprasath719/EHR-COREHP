@@ -1,0 +1,60 @@
+[INFO ][24-Oct-2022 15:31:25 PM] LoginPage.open_login_page:(33) - Entering URL: https://x75qa.cx360.net/Login/Member
+[INFO ][24-Oct-2022 15:31:30 PM] TC_001_LoginPageSteps.user_is_on_login_page_using_login_page_url:(40) - LoginPage loaded
+[INFO ][24-Oct-2022 15:31:30 PM] LoginPage.login_page_url_verfiy:(38) - Verifying login page URL
+[INFO ][24-Oct-2022 15:31:30 PM] TC_001_LoginPageSteps.user_is_on_login_page_using_login_page_url:(43) - LoginPage URL is : https://x75qa.cx360.net/Login/Member
+[INFO ][24-Oct-2022 15:31:30 PM] LoginPage.company_code_visibility:(44) - Checking Company Code Visibility
+[INFO ][24-Oct-2022 15:31:30 PM] TC_001_LoginPageSteps.user_sees_the_company_code_field:(50) - Company Code field was Visible
+[INFO ][24-Oct-2022 15:31:30 PM] LoginPage.company_code_enter:(63) - PRODUCTQA1 was entered in companycode field
+[INFO ][24-Oct-2022 15:31:30 PM] LoginPage.username_visibility:(69) - Checking Username Visibility
+[INFO ][24-Oct-2022 15:31:30 PM] TC_001_LoginPageSteps.user_sees_the_username_field:(62) - Username field was Visible
+[INFO ][24-Oct-2022 15:31:30 PM] LoginPage.username_enter:(87) - admin@coresolutionsinc.com was entered in Username field
+[INFO ][24-Oct-2022 15:31:30 PM] LoginPage.password_visibility:(94) - Checking password Visibility
+[INFO ][24-Oct-2022 15:31:30 PM] TC_001_LoginPageSteps.user_sees_the_password_field:(75) - Password field was Visible
+[INFO ][24-Oct-2022 15:31:30 PM] LoginPage.password_enter:(112) - Test@12345 was entered in Username field
+[INFO ][24-Oct-2022 15:31:30 PM] LoginPage.password_visibility:(94) - Checking password Visibility
+[INFO ][24-Oct-2022 15:31:30 PM] TC_001_LoginPageSteps.user_sees_the_login_button:(88) - Login Button field was Visible
+[INFO ][24-Oct-2022 15:31:48 PM] ApplicationHooks.tearDown:(56) - io.cucumber.java.Scenario@6884f0d9 is PASSED
+[INFO ][24-Oct-2022 15:31:48 PM] ApplicationHooks.quitBrowser:(64) - Quitting driver scenario completed io.cucumber.java.Scenario@26b95b0b
+[INFO ][24-Oct-2022 15:31:49 PM] LoginPage.open_login_page:(33) - Entering URL: https://x75qa.cx360.net/Login/Member
+[INFO ][24-Oct-2022 15:31:55 PM] TC_002_HomePageSteps.user_landed_on_homepage:(31) - LoginPage loaded
+[INFO ][24-Oct-2022 15:31:56 PM] LoginPage.login_page_url_verfiy:(38) - Verifying login page URL
+[INFO ][24-Oct-2022 15:31:56 PM] TC_002_HomePageSteps.user_landed_on_homepage:(34) - LoginPage URL is : https://x75qa.cx360.net/Login/Member
+[INFO ][24-Oct-2022 15:31:56 PM] LoginPage.company_code_enter:(63) - PRODUCTQA1 was entered in companycode field
+[INFO ][24-Oct-2022 15:31:56 PM] LoginPage.username_enter:(87) - admin@coresolutionsinc.com was entered in Username field
+[INFO ][24-Oct-2022 15:31:56 PM] LoginPage.password_enter:(112) - Test@12345 was entered in Username field
+[INFO ][24-Oct-2022 15:32:04 PM] TC_002_HomePageSteps.user_landed_on_homepage:(44) - Clicked Login button
+[INFO ][24-Oct-2022 15:32:04 PM] HomePage.time_zone_alert_handle:(55) - Timezone alert hanled succcessfully
+[INFO ][24-Oct-2022 15:32:11 PM] HomePage.home_page_url_verfiy:(38) - Verifying home page URL
+[INFO ][24-Oct-2022 15:32:11 PM] TC_002_HomePageSteps.user_checks_the_homepage_url_should_be_as_expected:(65) - verified homepage url https://x75qa.cx360.net/Home/Member
+[INFO ][24-Oct-2022 15:32:11 PM] ApplicationHooks.tearDown:(56) - io.cucumber.java.Scenario@53cf9c99 is PASSED
+[INFO ][24-Oct-2022 15:32:11 PM] ApplicationHooks.quitBrowser:(64) - Quitting driver scenario completed io.cucumber.java.Scenario@7b306b9f
+[INFO ][24-Oct-2022 15:36:06 PM] LoginPage.open_login_page:(33) - Entering URL: https://x75qa.cx360.net/Login/Member
+[INFO ][24-Oct-2022 15:36:11 PM] TC_001_LoginPageSteps.user_is_on_login_page_using_login_page_url:(40) - LoginPage loaded
+[INFO ][24-Oct-2022 15:36:11 PM] LoginPage.login_page_url_verfiy:(38) - Verifying login page URL
+[INFO ][24-Oct-2022 15:36:11 PM] TC_001_LoginPageSteps.user_is_on_login_page_using_login_page_url:(43) - LoginPage URL is : https://x75qa.cx360.net/Login/Member
+[INFO ][24-Oct-2022 15:36:11 PM] LoginPage.company_code_visibility:(44) - Checking Company Code Visibility
+[INFO ][24-Oct-2022 15:36:11 PM] TC_001_LoginPageSteps.user_sees_the_company_code_field:(50) - Company Code field was Visible
+[INFO ][24-Oct-2022 15:36:12 PM] LoginPage.company_code_enter:(63) - PRODUCTQA1 was entered in companycode field
+[INFO ][24-Oct-2022 15:36:12 PM] LoginPage.username_visibility:(69) - Checking Username Visibility
+[INFO ][24-Oct-2022 15:36:12 PM] TC_001_LoginPageSteps.user_sees_the_username_field:(62) - Username field was Visible
+[INFO ][24-Oct-2022 15:36:12 PM] LoginPage.username_enter:(87) - admin@coresolutionsinc.com was entered in Username field
+[INFO ][24-Oct-2022 15:36:12 PM] LoginPage.password_visibility:(94) - Checking password Visibility
+[INFO ][24-Oct-2022 15:36:12 PM] TC_001_LoginPageSteps.user_sees_the_password_field:(75) - Password field was Visible
+[INFO ][24-Oct-2022 15:36:12 PM] LoginPage.password_enter:(112) - Test@12345 was entered in Username field
+[INFO ][24-Oct-2022 15:36:12 PM] LoginPage.password_visibility:(94) - Checking password Visibility
+[INFO ][24-Oct-2022 15:36:12 PM] TC_001_LoginPageSteps.user_sees_the_login_button:(88) - Login Button field was Visible
+[INFO ][24-Oct-2022 15:36:20 PM] ApplicationHooks.tearDown:(56) - io.cucumber.java.Scenario@6884f0d9 is PASSED
+[INFO ][24-Oct-2022 15:36:20 PM] ApplicationHooks.quitBrowser:(64) - Quitting driver scenario completed io.cucumber.java.Scenario@26b95b0b
+[INFO ][24-Oct-2022 15:36:21 PM] LoginPage.open_login_page:(33) - Entering URL: https://x75qa.cx360.net/Login/Member
+[INFO ][24-Oct-2022 15:36:25 PM] TC_002_HomePageSteps.user_landed_on_homepage:(31) - LoginPage loaded
+[INFO ][24-Oct-2022 15:36:25 PM] LoginPage.login_page_url_verfiy:(38) - Verifying login page URL
+[INFO ][24-Oct-2022 15:36:25 PM] TC_002_HomePageSteps.user_landed_on_homepage:(34) - LoginPage URL is : https://x75qa.cx360.net/Login/Member
+[INFO ][24-Oct-2022 15:36:26 PM] LoginPage.company_code_enter:(63) - PRODUCTQA1 was entered in companycode field
+[INFO ][24-Oct-2022 15:36:26 PM] LoginPage.username_enter:(87) - admin@coresolutionsinc.com was entered in Username field
+[INFO ][24-Oct-2022 15:36:26 PM] LoginPage.password_enter:(112) - Test@12345 was entered in Username field
+[INFO ][24-Oct-2022 15:36:33 PM] TC_002_HomePageSteps.user_landed_on_homepage:(44) - Clicked Login button
+[INFO ][24-Oct-2022 15:36:34 PM] HomePage.time_zone_alert_handle:(55) - Timezone alert hanled succcessfully
+[INFO ][24-Oct-2022 15:36:40 PM] HomePage.home_page_url_verfiy:(38) - Verifying home page URL
+[INFO ][24-Oct-2022 15:36:40 PM] TC_002_HomePageSteps.user_checks_the_homepage_url_should_be_as_expected:(65) - verified homepage url https://x75qa.cx360.net/Home/Member
+[INFO ][24-Oct-2022 15:36:40 PM] ApplicationHooks.tearDown:(56) - io.cucumber.java.Scenario@53cf9c99 is PASSED
+[INFO ][24-Oct-2022 15:36:40 PM] ApplicationHooks.quitBrowser:(64) - Quitting driver scenario completed io.cucumber.java.Scenario@7b306b9f
