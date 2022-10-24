@@ -39,7 +39,7 @@ public class ApplicationHooks {
 
 	
 
-	@After(order = 0)
+	@After(order = 1)
 	public void tearDown(Scenario scenario) {
 		if (scenario.isFailed()) {
 			// take screenshot:
@@ -49,12 +49,19 @@ public class ApplicationHooks {
 			log.error(scenario+" is FAILED");
 
 			driver.quit();
-			log.warn("Quiting Browser");
+			log.warn("Quiting Browser due to failed scenario: "+scenario);
 
 		}
 		else {
 			log.info(scenario+" is PASSED");
 		}
+		
+			
+		}
+	@After(order = 0)
+	public void quitBrowser(Scenario scenario) {
+		driver.quit();
+		log.info("Quitting driver scenario completed "+scenario);
 	}
 
 }
