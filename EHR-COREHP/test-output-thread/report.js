@@ -1,25 +1,25 @@
 $(document).ready(function() {
 CucumberHTML.timelineItems.pushArray([
   {
-    "id": "34b75f9a-fbdc-4ccb-ae53-59f337e36406",
-    "feature": "Login page feature",
-    "scenario": "User enters login credentials",
-    "start": 1666605039432,
+    "id": "c2ba66b2-6dd5-4559-ae18-84134d57a5b6",
+    "feature": "Homepage feature",
+    "scenario": "User reaches Homepage",
+    "start": 1666605708245,
     "group": 1,
     "content": "",
     "tags": "",
-    "end": 1666605059144,
+    "end": 1666605731894,
     "className": "passed"
   },
   {
-    "id": "46149e2e-dc7b-46f3-9ecb-8b2d0ec99a39",
-    "feature": "Homepage feature",
-    "scenario": "User reaches Homepage",
-    "start": 1666605059160,
+    "id": "419f0288-c9e3-4122-ad15-1d95809926e8",
+    "feature": "Login page feature",
+    "scenario": "User enters login credentials",
+    "start": 1666605681313,
     "group": 1,
     "content": "",
     "tags": "",
-    "end": 1666605080553,
+    "end": 1666605708219,
     "className": "passed"
   }
 ]);
