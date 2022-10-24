@@ -25,8 +25,7 @@ public class DriverFactory {
 	 */
 	public WebDriver init_driver(String browser) {
 
-		System.out.println("browser value is: " + browser);
-
+	log.info(browser+" is selected");
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			tlDriver.set(new ChromeDriver());
