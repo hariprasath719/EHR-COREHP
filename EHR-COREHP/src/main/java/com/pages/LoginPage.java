@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.qa.util.ConfigReader;
+
 
 
 public class LoginPage {
@@ -124,6 +126,67 @@ public class LoginPage {
 		wait.until(ExpectedConditions.presenceOfElementLocated(loginbutton_by));
 		driver.findElement(loginbutton_by).click();	
 		}
+	public void dologin() {
+		ConfigReader configReader = new ConfigReader();
+		String company_code_value = configReader.init_prop().getProperty("companycode");
+		String username_value = configReader.init_prop().getProperty("username");
+		String password_value = configReader.init_prop().getProperty("password");
+		String expected_login_pageurl = configReader.init_prop().getProperty("loginpageurl");
+		//1. Open Login Page
+		log.info("Entering URL: "+expected_login_pageurl);
+		driver.get(expected_login_pageurl);
+		//2. Entering Company Code
+		WebDriverWait wait = new WebDriverWait(driver,4);
+		wait.until(ExpectedConditions.presenceOfElementLocated(companycode_by));
+		String value = driver.findElement(companycode_by).getText();
+		if(value == null) {
+	
+		driver.findElement(companycode_by).sendKeys(company_code_value);
+		log.info("companycode field was cleared and entered "+company_code_value);
+		
+		}
+		else {
+		
+			driver.findElement(companycode_by).clear();
+			driver.findElement(companycode_by).sendKeys(company_code_value);
+			log.info(company_code_value +" was entered in companycode field");
+		}
+		
+		//3. Entering Username
+		WebDriverWait wait1 = new WebDriverWait(driver,4);
+		wait1.until(ExpectedConditions.presenceOfElementLocated(username_by));
+		String value1 = driver.findElement(username_by).getText();
+		if(value1 == null) {
+		
+		driver.findElement(username_by).sendKeys(username_value);
+		log.info("Username field was cleared and entered "+username_value);
+		
+		}
+		else {
+			driver.findElement(username_by).clear();
+			driver.findElement(username_by).sendKeys(username_value);
+			log.info(username_value +" was entered in Username field");
+		}
+		//4. Entering Password
+		WebDriverWait wait2 = new WebDriverWait(driver,4);
+		wait2.until(ExpectedConditions.presenceOfElementLocated(password_by));
+		String value2 = driver.findElement(password_by).getText();
+		if(value2 == null) {
+		
+		driver.findElement(password_by).sendKeys(password_value);
+		log.info("Passsword field was cleared and entered "+password_value);
+		
+		}
+		else {
+			driver.findElement(password_by).clear();
+			driver.findElement(password_by).sendKeys(password_value);
+			log.info(password_value +" was entered in Username field");
+		}
+		//5. Clicking Login Button
+		WebDriverWait wait3 = new WebDriverWait(driver,4);
+		wait3.until(ExpectedConditions.presenceOfElementLocated(loginbutton_by));
+		driver.findElement(loginbutton_by).click();
+	}
 
 
 	

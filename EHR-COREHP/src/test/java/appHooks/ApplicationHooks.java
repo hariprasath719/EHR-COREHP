@@ -1,5 +1,8 @@
 package appHooks;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
@@ -34,6 +37,16 @@ public class ApplicationHooks {
 		String browserName = prop.getProperty("browser");
 		driverFactory = new DriverFactory();
 		driver = driverFactory.init_driver(browserName);
+		try{
+			prop.load(new FileInputStream("/EHR-COREHP/src/test/resources/log4j2.xml"));
+			}
+		catch(FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
+		prop.setProperty("log4j.appender.File.File", "/EHR-COREHP/logfile.log");
 		
 	}
 
@@ -49,7 +62,7 @@ public class ApplicationHooks {
 			log.error(scenario+" is FAILED");
 
 			driver.quit();
-			log.warn("Quiting Browser due to failed scenario: "+scenario);
+			log.fatal("Quiting Browser due to failed scenario: "+scenario);
 
 		}
 		else {

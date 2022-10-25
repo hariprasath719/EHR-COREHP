@@ -24,29 +24,10 @@ public class TC_002_HomePageSteps {
 	
 	@Given("User landed on homepage")
 	public void user_landed_on_homepage() {
-		ConfigReader configReader = new ConfigReader();
-
-		// url access
-		loginpage.open_login_page(configReader.init_prop().getProperty("loginpageurl"));
-		log.info("LoginPage loaded");
-		String expected_login_page_url = loginpage.login_page_url_verfiy();
-		assertEquals(expected_login_page_url, configReader.init_prop().getProperty("loginpageurl"));
-		log.info("LoginPage URL is : "+configReader.init_prop().getProperty("loginpageurl"));
-		
-		//company code
-		loginpage.company_code_enter(configReader.init_prop().getProperty("companycode"));
-		//username
-		loginpage.username_enter(configReader.init_prop().getProperty("username"));
-		//password
-		loginpage.password_enter(configReader.init_prop().getProperty("password"));
-		//login button
-		 loginpage.loginbutton_click();
-		 log.info("Clicked Login button");
+		loginpage.dologin();
 
 
 	}
-
-
 
 	
 	@When("User clicks Ok in the alert")
@@ -63,6 +44,9 @@ public class TC_002_HomePageSteps {
 		String actualhomepageurl = homepage.home_page_url_verfiy();
 		assertEquals(expectedhomepageurl, actualhomepageurl);
 		log.info("verified homepage url "+actualhomepageurl);
+		homepage.client_search();
+		homepage.verify_client_search();
+			
 	}
 
 
